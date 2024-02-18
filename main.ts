@@ -1,3 +1,5 @@
+import * as cleaner from "./gmail-cleaner.ts";
+
 declare let global: {
   doGet: (e?: GoogleAppsScript.Events.DoGet) =>
     | GoogleAppsScript.HTML.HtmlOutput
@@ -8,7 +10,13 @@ declare let global: {
   [key: string]: () => void;
 };
 
-global.createNewSpreadsheet = () => {
-  const spreadsheet = SpreadsheetApp.create("New file");
-  spreadsheet.getRange("A1").setValue("Hello World!");
+global.cleanGmail = () => {
+  // delete all emails received before half a year ago
+  const now = new Date();
+  const halfYearAgo = new Date(
+    now.getFullYear(),
+    now.getMonth() - 6,
+    now.getDate(),
+  );
+  cleaner.cleanGmail({ before: halfYearAgo });
 };

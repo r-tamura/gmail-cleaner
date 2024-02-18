@@ -11,5 +11,6 @@
   },
   "[typescript]": {
     "editor.defaultFormatter": "denoland.vscode-deno"
-  }
+  },
+  "deno.path": "/home/rtamura/.local/share/mise/installs/deno/1.40/bin/deno",
 }

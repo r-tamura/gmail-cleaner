@@ -3,6 +3,7 @@
   "packages": {
     "specifiers": {
       "npm:@google/clasp@2.4.2": "npm:@google/clasp@2.4.2_inquirer@8.2.6",
+      "npm:@types/google-apps-script": "npm:@types/google-apps-script@1.0.81",
       "npm:esbuild-gas-plugin@0.8.0": "npm:esbuild-gas-plugin@0.8.0"
     },
     "npm": {
@@ -177,6 +178,10 @@
           "@types/node": "@types/node@18.16.19",
           "@types/responselike": "@types/responselike@1.0.3"
         }
+      },
+      "@types/google-apps-script@1.0.81": {
+        "integrity": "sha512-1yUPhHVA6+P/K8yyyNgfEQznMeSzT0/wWYiH0/txg4Aruz1qAxmp6KLwd9GXQb1GmaMIQP6qe3n94Y+fvrfSGw==",
+        "dependencies": {}
       },
       "@types/http-cache-semantics@4.0.4": {
         "integrity": "sha512-1m0bIFVc7eJWyve9S0RnuRgcQqF/Xd5QsUZAZeQFr1Q3/p9JWoQQEqmVy+DPTNpGXwhgIetAoYF8JSc33q29QA==",
